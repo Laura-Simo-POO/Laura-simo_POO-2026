@@ -1,0 +1,25 @@
+==========================================
+   RAPPORT TECHNIQUE - Campus IRT
+==========================================
+
+--- PLAN D'ADRESSAGE VLSM ---
+ETUDIANTS -> 10.10.0.0/24 | Masque : 255.255.255.0 | Demandés : 200 | Capacité : 254 | Marge : 54
+WIFI_INVITES -> 10.10.1.254/24 | Masque : 255.255.255.0 | Demandés : 200 | Capacité : 254 | Marge : 54
+ENSEIGNANTS -> 10.10.3.252/25 | Masque : 255.255.255.128 | Demandés : 120 | Capacité : 126 | Marge : 6
+LABORATOIRES -> 10.10.4.250/26 | Masque : 255.255.255.192 | Demandés : 60 | Capacité : 62 | Marge : 2
+SERVEURS -> 10.10.5.120/27 | Masque : 255.255.255.224 | Demandés : 30 | Capacité : 30 | Marge : 0
+
+--- VLANS GENERÉS ---
+VLAN 10 : ETUDIANTS | Réseau : 10.10.0.0
+VLAN 20 : WIFI_INVITES | Réseau : 10.10.1.254
+VLAN 30 : ENSEIGNANTS | Réseau : 10.10.3.252
+VLAN 40 : LABORATOIRES | Réseau : 10.10.4.250
+VLAN 50 : SERVEURS | Réseau : 10.10.5.120
+
+--- RECOMMANDATIONS ---
+- VLAN ETUDIANTS est très grand.
+- VLAN WIFI_INVITES est très grand.
+
+==========================================
+Fin du rapport
+==========================================
